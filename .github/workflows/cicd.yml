@@ -6,6 +6,7 @@ on:
 
 env:
   IMAGE: ${{ secrets.DOCKERHUB_USERNAME }}/flask-k8s-app
+  KUBECONFIG_SECRET: ${{ secrets.KUBECONFIG }}
 
 jobs:
   test:
